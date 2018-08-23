@@ -32,7 +32,7 @@ const notesReducer = (state = initialState, action) => {
     case 'DELETE_NOTE':
       return { 
         ...state,
-        notes: state.notes.filter((note) => note._id !== action.id),
+        notes: state.notes.filter((note) => note.id !== action.id),
         deletingNote: false,
       }
     case 'EDITING_NOTE':
@@ -43,7 +43,7 @@ const notesReducer = (state = initialState, action) => {
       return {
         ...state,
         notes: state.notes.map((note) => {
-          if (note._id === action.id) {
+          if (note.id === action.id) {
             return {
               ...note,
               ...action.changedNote
