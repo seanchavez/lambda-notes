@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = 'https://killer-notes.herokuapp.com/note';
+const URL = 'localhost:8000/api/notes';
 
 export const getNotes = () => {
   return dispatch => {
