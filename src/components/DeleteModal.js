@@ -4,7 +4,7 @@ import { deleteNote } from '../actions/notesActions'
 
 class DeleteModal extends React.Component  {
   deleteHandler = () => {
-    this.props.deleteNote(this.props.match.params.id);
+    this.props.deleteNote(parseInt(this.props.match.params.id));
     this.props.history.push('/');
     console.log(this.props);
   }
