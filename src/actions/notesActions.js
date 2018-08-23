@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = 'localhost:8000/api/notes';
+const URL = 'https://lamenotes.herokuapp.com/api/notes';
 
 export const getNotes = () => {
   return dispatch => {
