@@ -8,7 +8,7 @@ const EditNote = (props) => {
     <div>
       <Sidebar />
       <h3>Edit Note:</h3>
-      <EditNoteForm  history={props.history}  id={props.match.params.id} />
+      <EditNoteForm  history={props.history}  id={parseInt(props.match.params.id)} />
     </div>
    );
 }
